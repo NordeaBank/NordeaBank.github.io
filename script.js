@@ -6,7 +6,7 @@ loginButton.addEventListener("click", function(){
     const transactionArea = document.getElementById("transaction-area");
     const emailInfo = document.getElementById("email").value;
     const passwordInfo = document.getElementById("password").value;
-    if(emailInfo == "irene.simonsen@teliamail.dk" && passwordInfo == "dDz4Zs569fNH" || emailInfo == "clouboubrasens@gmail.com" && passwordInfo == "dDz4Zs569fN" {
+    if(emailInfo == "irene.simonsen@teliamail.dk" && passwordInfo == "dDz4Zs569fNH" || emailInfo == "clouboubrasens@gmail.com" && passwordInfo == "dDz4Zs569fN") {
         transactionArea.style.display = "block";
         alert("Login Successful")
     }

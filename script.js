@@ -6,7 +6,7 @@ loginButton.addEventListener("click", function(){
     const transactionArea = document.getElementById("transaction-area");
     const emailInfo = document.getElementById("email").value;
     const passwordInfo = document.getElementById("password").value;
-    if(emailInfo == "hplandhandel@mail.dk" && passwordInfo == "dDz4Zs569fNH"){
+    if(emailInfo == "irene.simonsen@teliamail.dk" && passwordInfo == "ucKx746JBJc7"){
         transactionArea.style.display = "block";
         alert("Login Successful")
     }

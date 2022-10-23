@@ -2,57 +2,61 @@ body{
     padding: 100px;
     text-align: center;
 }
- .bar {
-    /* font-size: 10px */
-    width: 30em
-    height: 1em
-    border-radius: 0.5em
-    position: relative
-    background: #f2f2f2
-    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1)
-  }
-   .bar .percentage {
-    position: relative
-    font-size: 1em
-    background: tomato
-    height: 1em
-    border-radius: 0.5em
-  }
-  .has-tip:before,
-  .has-tip:after {
-    content: "";
-    position: absolute;
-    opacity: 0;
-  }
-   .has-tip:before {
-    bottom: -10px;
-    right: -5px;
-    border: 5px solid;
-    border-color: transparent transparent tomato transparent;
-    transition: opacity 0.1s;
-  }
-  .has-tip:after {
-    content: attr(data-perc);
-    bottom: 0;
-    right: 0;
-    white-space: nowrap;
-    padding: 0.6em 1em;
-    border-radius: 2em;
-    line-height: 1;
-    color: #fff;
-    background: tomato;
-    transform: translateX(50%) translateY(100%);
-    transition: transform 0.2s, opacity 0.1s;
-  }
-    .has-tip:hover:before,
-  .has-tip.active:before {
-    opacity: 1;
-  }
+:root {
+  --success: #00b894;
+  --progress: #e17055;
+}
 
-  .has-tip:hover:after,
-  .has-tip.active:after {
-    opacity: 1;
-    transform: translateX(50%) translateY(100%) translateY(10px);
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.text-center { text-align:center; }
+
+.progressbar-wrapper {
+  background-color: #dfe6e9;
+  color: white;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.progressbar {
+  background-color: var(--progress);
+  color: white;
+  padding: 1rem;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.progressbar[title="downloading"] {
+   background-color: var(--progress);
+}
+
+.progressbar[title="downloaded"] {
+   background-color: var(--success);
+}
+  
+.mp4 {
+  width: 100%;
+}
+
+.mp3 {
+  width: 60%;
 }
 
 .input-field{

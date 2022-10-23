@@ -3,7 +3,6 @@ body{
     text-align: center;
 }
 
-//
 :root {
   --success: #00b894;
   --progress: #e17055;
@@ -60,7 +59,7 @@ h1 {
 .mp3 {
   width: 60%;
 }
-//
+
 .input-field{
     margin: 20px 50px;
     padding:40px;

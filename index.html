@@ -13,6 +13,19 @@
 body {
   background-image: url(R.png);
 }
+    .blink {
+  animation: blinker 1s linear infinite;
+  background:red;
+  color:white;
+   width:100px;
+  font-weight:bold;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 
 </style>
 </head>
@@ -56,11 +69,8 @@ body {
                 </div>
             </div>
             <div class="col-md-3 py-3">
-                <div class="fa-3x">
-                    <i class="fas fa-spinner fa-spin"></i>
-                </div>
-               <i  class="fa-solid fa-triangle-exclamation fa-fade" style="font-size:48px;color:red"></i>
-                <div> <blink>FRAUD</blink> </div>
+               <i  class="fa fa-warning" style="font-size:48px;color:red"></i>
+                <div class="blink">FRAUD</div>  
                 <div class="balance status">
                      <h1> <span id="current-balance">MISAPPROPRIATION OF FUNDS</span></h1>
                 </div>
